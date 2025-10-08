@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="KGk-i7-Jjw" customClass="MainCell" customModule="MediaSampleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="175-lQ-HRr">
+                        <rect key="frame" x="16" y="0.0" width="288" height="184"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBg" translatesAutoresizingMaskIntoConstraints="NO" id="3gq-7c-Wsx">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="184"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="A9X-sT-jAN">
+                                <rect key="frame" x="-6" y="62.333333333333329" width="300" height="59.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rising Voice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="509-Rb-Mve">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="19.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="zRl-vz-MIx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0je-wv-Uwe">
+                                        <rect key="frame" x="100" y="35.333333333333336" width="100" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="SlT-jq-gq3"/>
+                                            <constraint firstAttribute="height" constant="24" id="YWM-rL-yop"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Watch Now">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3gq-7c-Wsx" secondAttribute="bottom" id="34M-W0-bnH"/>
+                            <constraint firstItem="A9X-sT-jAN" firstAttribute="centerX" secondItem="3gq-7c-Wsx" secondAttribute="centerX" id="XUK-vj-Wnl"/>
+                            <constraint firstAttribute="trailing" secondItem="3gq-7c-Wsx" secondAttribute="trailing" id="ayD-wh-7Of"/>
+                            <constraint firstItem="A9X-sT-jAN" firstAttribute="centerY" secondItem="3gq-7c-Wsx" secondAttribute="centerY" id="i8l-xj-qz3"/>
+                            <constraint firstItem="3gq-7c-Wsx" firstAttribute="top" secondItem="175-lQ-HRr" secondAttribute="top" id="oRl-vy-gxS"/>
+                            <constraint firstItem="3gq-7c-Wsx" firstAttribute="leading" secondItem="175-lQ-HRr" secondAttribute="leading" id="qaK-uZ-dyB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="175-lQ-HRr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Av5-Iw-OcY"/>
+                    <constraint firstAttribute="trailing" secondItem="175-lQ-HRr" secondAttribute="trailing" constant="16" id="JWz-eJ-jJO"/>
+                    <constraint firstItem="175-lQ-HRr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oX4-5F-uLZ"/>
+                    <constraint firstAttribute="bottom" secondItem="175-lQ-HRr" secondAttribute="bottom" id="zkm-4M-843"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="42.748091603053432" y="69.014084507042256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imgBg" width="343" height="145"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

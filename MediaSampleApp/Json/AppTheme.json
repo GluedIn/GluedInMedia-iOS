@@ -1,0 +1,74 @@
+{
+    "clientId": "1234567890",
+    "endUrl": "",
+    "logEnable": true,
+    "environmentConfig": {
+        "id": "environment_id"
+    },
+    "themeConfig": {
+        "appColor": {
+            "buttonActiveColor": "#0033ff",
+            "buttonInactiveColor": "#839BF8",
+            "outlineButtonColor": "#0242FC",
+            "iconColor": "#0033ff",
+            "appPrimaryColor": "#555555",
+            "appSecondaryColor": "#343434",
+            "textColorBlack": "#000000",
+            "actionColorDefault": "#FFFFFF",
+            "dividerOutlineColor": "#AEBBCE",
+            "inActiveButtonColor": "#AEBBCE",
+            "inActiveButtonTitleColor": "#59676F",
+            "selectedCellColor": "#D3E4EC",
+            "textfieldBorderColor": "#AEBBCE",
+            "secondaryButtonColor": "#0033ff",
+            "tintColor": "#000000",
+            "unselectedItemTintColor": "#000000",
+            "barTintColor": "#FFFFFF",
+            "selectionIndicatorColor": "#0033ff"
+        },
+        "appDarkColor": {
+            "giProductThemeColor"           : "",
+            "giBlckShadeOne"                : "",
+            "giBlckShadeTwo"                : "",
+            "giBlckShadeThree"              : "",
+            "giWhiteColor"                  : "",
+            "giGrayShadeOne"                : "",
+            "giGrayShadeTwo"                : "",
+            "giGrayShadeThree"              : ""
+        },
+        "appFont": {
+            "defaultFont": ""
+        }
+    },
+    "widgetConfig": {
+        "id": "widget_id"
+    },
+    "hashtagConfig": {
+        "isEnable": true
+    },
+    "challengeConfig": {
+        "isEnable": true
+    },
+    "verticalVideoFeedConfig": {
+        "isEnable": true
+    },
+    "creatorConfig": {
+        "isEnable": true
+    },
+    "notificationConfig": {
+        "isEnable": true
+    },
+    "discoverConfig": {
+        "isEnable": true
+    },
+    "profileConfig": {
+        "isEnable": true,
+        "saveToDraftConfig": true
+    },
+    "signInConfig": {
+        "isEnable": false
+    },
+    "viewConfig": {
+        "viewAnalysisTime": 3
+    }
+}

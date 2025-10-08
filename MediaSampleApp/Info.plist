@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GluedInConfiguration</key>
+	<dict>
+		<key>ANDROID_PRODUCT_PACKAGE</key>
+		<string>${ANDROID_PRODUCT_PACKAGE}</string>
+		<key>ASSOCIATED_DOMAIN</key>
+		<string>${ASSOCIATED_DOMAIN}</string>
+		<key>BACK_ENABLE</key>
+		<string>1</string>
+		<key>DIRECT_MESSAGE_URL</key>
+		<string>${DIRECT_MESSAGE_URL}</string>
+		<key>DISABLE_DEFAULT_SHARE</key>
+		<true/>
+		<key>ENABLE_DEFAULT_PROFILE</key>
+		<false/>
+		<key>EnableProductCallback</key>
+		<false/>
+		<key>IS_AUTH_SKIP</key>
+		<string>${isAuthSkip}</string>
+		<key>IS_BOTTOM_BAR_ENABLE</key>
+		<string>${isBottomBarEnable}</string>
+		<key>IS_DEBUG_MODE</key>
+		<true/>
+		<key>IS_FOLLOW_ENABLE_ONFEED</key>
+		<true/>
+		<key>MINIMUM_VIEW_DURATION</key>
+		<integer>3</integer>
+		<key>PARENT_APP_ENABLE</key>
+		<string>${PARENT_APP_ENABLE}</string>
+		<key>SERVER_URL</key>
+		<string>put_here_server_url</string>
+		<key>TIME_TO_REFRESH_BANDWIDTH</key>
+		<integer>60</integer>
+		<key>VERTICAL_FEED</key>
+		<string>1</string>
+	</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
