@@ -7,8 +7,9 @@ target 'MediaSampleApp' do
   use_frameworks!
 
   # Pods for MediaSampleApp
-  pod 'GluedInSDK', '5.7.0'
+  pod 'GluedInSDK', '6.0.0'
   pod 'ToastViewSwift'
   pod 'Mobile-Buy-SDK', '2025.7.0'
+  pod 'Google-Mobile-Ads-SDK'
 
 end

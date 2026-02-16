@@ -14,6 +14,22 @@ class Global {
     /// The shared singleton instance.
     static let shared = Global()
     
+    /**
+     Retrieves a localized string for the specified key.
+     
+     This method attempts to fetch the localized value for a given key using a string extension method. If no localized value is found,
+     it returns the provided default string.
+     
+     - Parameters:
+       - localisedKey: The key used to look up the localized value.
+       - defaultString: The fallback string to return if the localization for the key is missing.
+     
+     - Returns: A localized string if available; otherwise, the default string.
+     */
+    func getLocalisedValue(localisedKey: String, defaultString: String) -> String {
+        return localisedKey.localizedWithDefaultValue(defaultValue: defaultString)
+    }
+    
     /// Formats a raw price string into a clean display format with proper symbol.
     /// Supports inputs like: "SGD 5", "USD 12.50", "INR 199", "$ 5", "€9.99".
     func formatPrice(from raw: String?) -> String? {

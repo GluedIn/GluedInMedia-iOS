@@ -24,6 +24,7 @@ enum CellIdentifier {
 enum SDKEnvironment {
     static let apiKey = "put_here_your_api_key"
     static let secretKey = "put_here_your_secret_key"
+    static let serverUrl = "put_here_your_server_Url"
     static let email = "put_here_your_email@example.com"
     static let password = "put_here_your_password"
     static let name = "put_here_your_name"

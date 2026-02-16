@@ -35,7 +35,6 @@
 "gluedin_creator_gallery" = "Gallery";
 "gluedin_creator_add_filter" = "Add Filter";
 "gluedin_creator_select_sound" = "   Select Sound";
-"gluedin_creator_search_hint" = "Search here your favourite Sounds";
 "gluedin_creator_search_music" = "Search Music...";
 "gluedin_creator_post" = "Post";
 "gluedin_creator_add_from_gallery" = "Add From Gallery";
@@ -43,8 +42,8 @@
 "gluedin_creator_user_not_logged_in" = "User not logged in.";
 "gluedin_creator_discard" = "Discard";
 "gluedin_creator_Start_Again" = "Discard Post";
-"gluedin_creator_upload_video_maxsize" = "This file could not be uploaded. Custom Video File Max Size: 50MB";
-"gluedin_creator_upload_video_thumbnail_maxsize" = "This file could not be uploaded. Video Thumbnail File Max Size: 10MB";
+"gluedin_creator_upload_video_maxsize" = "Video size must be less than 100MB."; // "This file could not be uploaded. Custom Video File Max Size: 100MB";
+"gluedin_creator_upload_video_thumbnail_maxsize" = "This file could not be uploaded. Video Thumbnail File Max Size: 5MB";
 "gluedin_creator_video_discard_title_message" = "Discard this Video?";
 "gluedin_creator_video_discard_message" = "Are you sure you want to Discard this post?";
 "gluedin_creator_video_will_deleted" = "If you continue this clip will be deleted.";
@@ -60,8 +59,8 @@
 "gluedin_creator_continue_text" = "Continue";
 "gluedin_creator_please_enter_description" = "Please enter post description";
 "gluedin_creator_video_description_maxlength" = "Video Description should not be more than 200 characters";
-"gluedin_creator_video_title_maxlength" = "Video Title  should  not be more than 80 characters";
-"gluedin_creator_uploading_inprogress" = "Uploading in progress";
+"gluedin_creator_video_title_maxlength" = "Video Title must not be more than 80 characters.";
+"gluedin_creator_uploading_inprogress" = "Upload in progress";
 "gluedin_creator_uploading" = "Uploading...";
 "gluedin_creator_retry" = "Retry";
 "gluedin_creator_photo_gallery_permission_message" = "You need to allow required 'Photos' permissions!. Please go to the Settings to enable access.";
@@ -105,6 +104,7 @@
 "gluedin_creator_stickers_text" = "Stickers";
 "gluedin_creator_loading_text" = "Loading";
 "gluedin_creator_discard_changes" = "Are you sure you want to discard the changes?";
+"gluedin_discard_video_confirmation" = "Are you sure you want to discard this video?";
 "gluedin_creator_discard_video" = "Discard Video";
 "gluedin_creator_discard_post" = "Discard Post";
 
@@ -144,6 +144,7 @@
 "gluedin_discover_tab_challenges" = "Challenges";
 "gluedin_discover_tab_videos" = "Videos";
 "gluedin_discover_tab_posts" = "Posts";
+"gluedin_discover_tab_for_you" = "For You";
 "gluedin_discover_tab_search_videos" = "Searched Videos";
 "gluedin_discover_tab_search_posts" = "Searched Posts";
 "gluedin_discover_no_search_result_for_all" = "We can't find any thing matching your search";
@@ -183,12 +184,12 @@
 "gluedin_feed_your_feedback_helpus" = "Your feedback is important in helping  us keep our community safe";
 "gluedin_feed_comments" = "Comments";
 "gluedin_feed_edit_comment" = "Edit Comment";
-"gluedin_feed_download_video" = "Download Video";
+"gluedin_feed_download_video" = "Download Content";
 "gluedin_feed_report_image" = "Report Image";
-"gluedin_feed_report_video" = "Report Video";
+"gluedin_feed_report_video" = "Report Content";
 "gluedin_feed_report_episode" = "Report Episode";
 "gluedin_feed_report_text" = "Report Text";
-"gluedin_feed_download_success" = "Video has been downloaded successfully";
+"gluedin_feed_download_success" = "Content has been downloaded successfully";
 "gluedin_feed_report" = "Report";
 "gluedin_feed_download" = "Download";
 "gluedin_feed_theconsole_do_not_match_with_app_format" = "The project format created at the console doesn't match with your app format selection. Please choose the correct format";
@@ -204,17 +205,16 @@
 "gludin_comman_ristricted_to_authorizeed_users_only" = "This functionality is restricted to authorized users only. Please contact the support team";
 "gluedin_feed_invalid_downloadurl" = "Couldn't download invalid url";
 "gluedin_feed_comment_View_Previous_Comments" = "View previous comments";
-"gluedin_feed_no_internet" = "No Internet Connection";
 "gluedin_feed_no_FollowingYet" = "You are not following anyone yet";
 "gluedin_repost_video" = "Repost";
 "gluedin_feed_repostWithThought_video" = "Repost with your thoughts";
-"gluedin_feed_originalReposted" = "Reposted - Original Video";
+"gluedin_feed_originalReposted" = "Reposted - Original Content";
 "gluedin_feed_CannotReportMsg" = "You are not allowed to report your own video.";
-"gluedin_feed_RepostSuccessMsg" = "Repost has been successfully";
-"gluedin_feed_RepostOneTimeMsg" = "Video has already been reposted once";
+"gluedin_feed_RepostSuccessMsg" = "Reposted successfully.";
+"gluedin_feed_RepostOneTimeMsg" = "Content has already been reposted once.";
 "gluedin_creator_PostSettingMsg" = "If you disable the like, comment, share and download toggle then the user can't access these features.";
 "gluedin_feed_comments_hideText" = "Hide";
-"gluedin_feed_cannot_repost_own_video" = "You can not repost your own video";
+"gluedin_feed_cannot_repost_own_video" = "You can not repost your own content.";
 "gluedin_feed_view_story" = "View Story";
 "gluedin_feed_view_profile" = "View Profile";
 "gluedin_feed_stories" = "Stories";
@@ -241,18 +241,58 @@
 "gluedin_feed_episode" = "Episode";
 "gluedin_feed_ep" = "EP.";
 "gluedin_feed_promo" = "Promo";
-"gluedin_feed_no_episode" = "Series no longer available";
-"gluedin_feed_episode_not_exist" = "Episode doesn't exist.";
+"gluedin_feed_no_episode" = "The requested series or episode is no longer available.";
 "gluedin_feed_watch_full_series" = "Watch Full Series";
-
-"gluedin_feed_free_preview_over" = "Free Preview Over! Unlock Full Access Now";
-"gluedin_feed_get_uninterrupted" = "Get uninterrupted access to all exclusive videos. Unlock now and continue watching!";
+"gluedin_feed_free_preview_over" = "Free Preview Over — Unlock Full Access Now";
+"gluedin_feed_get_uninterrupted" = "Get uninterrupted access to all episodes. Subscribe now to unlock full access.";
 "gluedin_feed_unlock_now" = "Unlock Now";
 "gluedin_feed_choose_how" = "Choose How You’d Like to Pay";
 "gluedin_feed_in_app_purchase" = "In-App Purchase";
 "gluedin_feed_payment_gateway" = "Payment Gateway";
 "gluedin_feed_continue" = "Continue";
 "gluedin_feed_no_video_avibalable" = "No videos available";
+"gluedin_feed_episode_locked" = "Episode Locked – Choose How to Unlock";
+"gluedin_feed_insufficient_balance" = "You don’t have enough %@ to continue. Buy more %@ or subscribe for unlimited access.";
+"gluedin_feed_insufficient_dynamic_full" = "You don’t have enough %@ to continue. Earn %@ by sharing, interacting, and more, or subscribe for unlimited access.";
+"gluedin_feed_insufficient_dynamic_short" = "You don’t have enough %@ to continue. Earn %@ by sharing, interacting, and more.";
+
+"gluedin_feed_insufficient_balance_earn_more" = "You don’t have enough %@ to continue. Earn %@ by Sharing, Interacting and more.";
+"gluedin_feed_insufficient_balance_watch_ad" = "You don’t have enough %@ to continue. Watch a short ad to earn %@ and unlock this episode.";
+"gluedin_feed_unlock_in" = "Unlock this episode with";
+"gluedin_feed_balance" = "Balance";
+"gluedin_feed_watch_ad_to_earn" = "Watch an ad to earn %d %@";
+"gluedin_feed_watch_ad" = "Watch Ad";
+"gluedin_feed_watch_an_ad" = "Watch an Ad";
+"gluedin_feed_ad" = "Ad";
+"gluedin_feed_ads_watched_today" = "%d/%d Ads watched today • %d remaining";
+"gluedin_feed_earn_by_engagement" = "Share, Interact and More - every move earns you %@";
+"gluedin_feed_earn_currency" = "Earn %@";
+"gluedin_feed_free_preview_ended" = "Free Preview Ended – Unlock the Episode";
+"gluedin_feed_insufficient_balance_unlock" = "You don’t have enough %@ to continue. Buy more %@ to unlock this episode.";
+"gluedin_feed_cannot_jump_locked_episode" = "What happens between the episodes will surprise you — don’t miss it.";
+"gluedin_feed_coins_added_wallet" = "%@ Successfully Added!";
+"gluedin_feed_coins_added_wallet_message" = "%@ %@ have been added to your balance.";
+"gluedin_feed_available_balance" = "Available %@";
+"gluedin_feed_coins" = "Coins";
+"gluedin_feed_transactions" = "Transactions";
+"gluedin_feed_earned" = "Earned";
+"gluedin_feed_purchased" = "Purchased";
+"gluedin_feed_no_transactions_yet" = "No transactions yet. Start earning or\npurchasing to see your history here.";
+"gluedin_feed_coins_for" = "%@ for a";
+"gluedin_feed_coins_for_Ad" = "%@ for one";
+"gluedin_feed_coupons" = "Coupons";
+"gluedin_feed_view_all" = "View All";
+"gluedin_feed_episode_locked_title" = "Episode Locked";
+"gluedin_feed_episode_locked_subtitle" = "You haven't watched the prior episodes yet";
+"gluedin_feed_start_from_to_unlock" = "Start from %@ to unlock %@";
+"gluedin_feed_continue_from_episode" = "Continue From %@ %@";
+"gluedin_feed_start_from_episode" = "Start From %@ %@";
+"gluedin_feed_daily_checkin" = "Daily Check-In";
+"gluedin_feed_daily_checkin_desc" = "Check in daily to earn %@!";
+"gluedin_feed_claimed" = "Claimed";
+"gluedin_feed_day" = "Day";
+"gluedin_feed_earn_with_checkins" = "Don’t miss your daily check-in! Earn %@ and unlock episodes for free.";
+"gluedin_feed_check_in" = "Check-in";
 
 //=========================Common==========================
 
@@ -271,6 +311,7 @@
 "gluedin_creator_sec" = "Sec";
 
 "gluedin_creator_video_processing" = "Video Processing...";
+"gluedin_creator_image_processing" = "Preparing your image...";
 "gluedin_creator_Friend" = "@ Friend";
 "gluedin_common_no" = "NO";
 "gluedin_common_ok" = "OK";
@@ -291,12 +332,12 @@
 "gluedin_common_gotit" = "Got it";
 "gluedin_common_submit" = "Submit";
 "gludin_comman_username_already_taken" = "This username is already taken.";
-"gluedin_common_video_unavailable" = "Video unavailable";
-"gluedin_common_video_blocked" = "This Video is not available.";
-"gluedin_common_video_expired" = "This Video is no longer available.";
-"gluedin_common_video_pending" = "This Video is no longer available.";
-"gluedin_common_video_deleted" = "This Video is no longer available.";
-"gluedin_common_video_region_Restricted" = "This Video is not available in your country.";
+"gluedin_common_video_unavailable" = "This content is not available.";
+"gluedin_common_video_blocked" = "This content is not available.";
+"gluedin_common_video_expired" = "This content is no longer available.";
+"gluedin_common_video_pending" = "This content is no longer available.";
+"gluedin_common_video_deleted" = "This content is no longer available.";
+"gluedin_common_video_region_Restricted" = "This content is not available in your country.";
 //"gluedin_common_no_internet" = "No network connection. Please check your internet connection.";
 "gluedin_common_no_internet" = "You are offline. Please check your internet connection.";
 
@@ -360,8 +401,8 @@
 "gluedin_common_payment_failed" = "Payment Failed";
 "gluedin_common_payment_failed_message" = "There was an issue processing your purchase.\nPlease try again to complete it.";
 
-"gluedin_common_purchase_failed" = "Purchase Failed";
-"gluedin_common_purchase_failed_message" = "Something went wrong while processing your purchase. Please try again.";
+"gluedin_common_purchase_failed" = "Transaction Failed";
+"gluedin_common_purchase_failed_message" = "Something went wrong while processing your transaction. Please try again.";
 
 "gluedin_common_subscription_confirmed" = "Success! Series Unlocked!";
 "gluedin_common_subscription_confirmed_message" = "You're all set! Your purchase is complete and the content is now yours to enjoy — anytime, forever.";
@@ -369,12 +410,15 @@
 "gluedin_common_watch_now" = "Watch Now";
 "gluedin_common_watch_free_episodes" = "Watch Free Episodes";
 "gluedin_common_activity" = "Activity";
+"gluedin_common_id" = "ID";
+"gluedin_common_followed_success" = "Followed successfully";
+"gluedin_common_unfollowed_success" = "Unfollowed successfully";
 
 ////========================Profile==========================
 "gluedin_profile_unlink_instagram" = "Unlink Instagram";
 "gluedin_profile_unlink_facebook" = "Unlink Facebook";
 "gluedin_profile_deleted_account_message" = "The Account has beeen deleted successfully.";
-"gluedin_profile_reported_successfully" = "The user has been reported successfully.";
+"gluedin_profile_reported_successfully" = "The user has been reported successfully. Your feedback is valuable to us.";
 "gluedin_profile_liked" = "Liked";
 "gluedin_profile_commented" = "Commented";
 "gluedin_profile_shares" = "Shares";
@@ -394,7 +438,7 @@
 "gluedin_profile_pass_to_delete_account_first" = "Enter your password to \n delete your account";
 "gluedin_profile_enter_correct_pass" = "Please enter correct password*";
 "gluedin_profile_delete_account_message" = "Do You want to delete \n your account?";
-"gluedin_profile_image_maxfile" = "This file could not be uploaded. Profile Image File Max Size: 10MB";
+"gluedin_profile_image_maxfile" = "This file could not be uploaded. Image File Max Size: 5MB";
 "gluedin_profile_upload_profile_image" = "Please upload your profile photo";
 "gluedin_profile_post" = "Posts";
 "gluedin_profile_videos" = "Videos";
@@ -445,6 +489,16 @@
 "gluedin_profile_About_User" = "About User";
 "gluedin_profile_account_title" = "Blocked Accounts";
 "gluedin_profile_change_password" = "Change Password";
+"gluedin_profile_more_support" = "Support";
+"gluedin_common_your_issues" = "Your Issues";
+"gluedin_common_raise_new_issue" = "Raise New Issue";
+"gluedin_common_status" = "Status";
+"gluedin_common_select_issue_status" = "Select Issue Status";
+"gluedin_common_select_transaction_type" = "Select Transaction Type";
+"gluedin_common_type" = "Type";
+"gluedin_common_raise_issue" = "Raise Issue";
+"gluedin_common_issue_details" = "Issue Details";
+
 "gluedin_profile_about" = "About";
 "gluedin_profile_current_password_title" = "Current Password";
 "gluedin_common_new_password" = "New Password";
@@ -466,6 +520,7 @@
 "somethingElse" = "Something else";
 "underAge13" = "They may be under the age of 13";
 "gluedin_profile_block_success_msg" = "The user has been blocked successfully.";
+"gluedin_profile_block_already" = "The user is already blocked";
 "gluedin_profile_unblock_success_msg" = "The user has been unblocked successfully.";
 "gluedin_profile_almost_uploading_progress" = "Almost done! Uploading in progress.";
 "gluedin_profile_uploading_in_progress" = "Your content is uploading…";
@@ -534,7 +589,7 @@
 
 "gluedin_rewards_available_coupons" = "Available Coupons";
 "gluedin_rewards_available_points" = "Available Points";
-"gluedin_rewards_earn_points" = "Earn Points";
+"gluedin_rewards_earn_points" = "Earn %@";
 "gluedin_rewards_my_coupons" = "My Coupons";
 "gluedin_rewards_GetCoupon" = "Get Coupon Code";
 "gluedin_rewards_view_code" = "View Code";
@@ -555,8 +610,8 @@
 "gluedin_rewards_points" = "Points";
 "gluedin_rewards_availed_for" = "Availed for";
 "gluedin_rewards_back" = "Back";
-"gluedin_rewards_low_balance" = "LowBalance";
-"gluedin_rewards_add_more" = "Add more points to grab this coupon. Please visit the earn points section to know more.";
+"gluedin_rewards_low_balance" = "Low Balance";
+"gluedin_rewards_add_more" = "Add more %@ to grab this coupon. Please visit the earn %@ section to know more.";
 "gluedin_rewards_copied" = "Copied";
 
 ////=====================Text-Feature====================
@@ -626,3 +681,84 @@
 "gluedin_common_shorts" = "Shorts";
 "gluedin_common_short" = "Short";
 "gluedin_common_follower" = "Follower";
+
+// 🔹 Spend Coins (REDEEMED)
+"gluedin_event_unlock_episode" = "Unlock Episode";
+"gluedin_event_coupon_redeemed" = "Coupon Redeemed";
+
+// 🔹 Earn Coins (EARN)
+"gluedin_event_buy_package" = "Pack Purchase";
+"gluedin_event_watch_ad" = "Watched Ad";
+"gluedin_event_share" = "Share Content";
+"gluedin_event_like" = "Like Content";
+"gluedin_event_comment" = "Comment Content";
+"gluedin_event_follow" = "Follow Creator";
+"gluedin_event_create" = "Create Content";
+"gluedin_event_join" = "Join Challenge";
+"gluedin_event_leaderboard_winner" = "Leaderboard Winner";
+"gluedin_event_daily_check_in" = "Daily Check-in";
+
+// 🔹 Expire Coins (EXPIRED)
+"gluedin_event_unlike" = "Unlike Content";
+"gluedin_event_unfollow" = "Unfollow Creator";
+"gluedin_event_comment_delete" = "Comment Deleted";
+"gluedin_event_content_delete" = "Content Deleted";
+"gluedin_event_join_delete" = "Leave Challenge";
+
+// 🔹 Fallback
+"gluedin_event_unknown" = "Unknown Event";
+"gluedin_transaction_id" = "Transaction ID";
+"gluedin_choose_transaction_need_help" = "Choose the transaction you need help with:";
+"gluedin_cant_find_transaction" = "Can’t find my transaction";
+"gluedin_transaction_issue_question" = "What issue are you experiencing with this transaction?";
+"gluedin_transaction_details_prompt" = "Please provide your Payment App transaction ID or any details related to the specific transaction.";
+"gluedin_didnt_receive_items" = "Didn't receive items";
+"gluedin_wrong_charge_amount" = "Wrong charge amount";
+"gluedin_unauthorized_transaction" = "Unauthorized transaction";
+"gluedin_other_issue" = "Other issue";
+"gluedin_issue_description_hint" = "Please describe what happened in detail. The more information you provide, the faster we can help.";
+"gluedin_issue_submitted_successfully" = "Issue submitted successfully";
+"gluedin_issue_update_notification" = "We'll notify you when there's an update";
+"gluedin_close_issue_question" = "Close this issue?";
+"gluedin_close_issue_confirmation" = "Are you sure you want to close this issue? This will mark it as resolved. You can always open a new issue if you need further assistance.";
+"gluedin_close_issue" = "Close Issue";
+"gluedin_issue_closed" = "Issue has been closed";
+"gluedin_close" = "Close";
+"gluedin_issue_description_empty_toast" = "Please describe your issue in detail.";
+"gluedin_in_progress" = "In Progress";
+"gluedin_resolved" = "Resolved";
+"gluedin_coin_credit_issue_resolved" = "The coin crediting issue has been resolved. Please open coin wallet to check updated balance.";
+"gluedin_coin_debit_issue_resolved" = "The coin debit issue has been resolved. Please restart the app to see the updated balance.";
+"gluedin_read_more" = "more";
+"gluedin_read_less" = "less";
+"gluedin_common_manage_subscriptions" = "Manage Subscriptions";
+"gluedin_common_manage_suscription" = "Manage Suscription";
+"gluedin_common_cancel_renewal_note" = "*To cancel renewal, manage it in %@";
+"gluedin_common_coins_rewards" = "Coins & Rewards";
+"gluedin_common_buy_coins" = "Buy Coins";
+"gluedin_common_subscription_plans" = "Subscription Plans";
+"gluedin_common_show_less" = "Show Less";
+"gluedin_common_show_more" = "Show More";
+"gluedin_common_unlock_with_subscription" = "Unlock this Episode with Subscription Plan";
+"gluedin_common_google_subscription_account_url" = "https://play.google.com/store/account/subscriptions";
+"gluedin_common_manage_your_subscription" = "Manage Your Subscription";
+"gluedin_common_manage_subscription_google_desc" = "Your subscription was purchased via Google Play. To make changes or cancel, please visit your Google Play account settings. Any changes made there will be reflected here automatically.";
+"gluedin_common_manage_on_google_play" = "Manage on Google Play";
+"gluedin_common_subscription_activated_title" = "Subscription Activated\nSuccessfully";
+"gluedin_common_subscription_activated_desc" = "You now have full access to all premium content.";
+"gluedin_common_renew_on" = "Renew On";
+"gluedin_common_active" = "Active";
+"gluedin_common_google_play" = "Google Play";
+"gluedin_common_app_store" = "App Store";
+"gluedin_common_open" = "Open";
+"gluedin_common_search_another_transaction" = "Search for another transaction";
+"gluedin_common_cant_find_my_transaction" = "Can’t find my transaction";
+"gluedin_common_enter_transaction_id" = "Enter transaction ID...";
+"gluedin_common_support_team" = "Support Team";
+"gluedin_common_no_transactions_found" = "No transactions found";
+
+"gluedin_subscription_day" = "Day";
+"gluedin_subscription_days" = "Days";
+"gluedin_subscription_year" = "Year";
+"gluedin_subscription_years" = "Years";
+"gluedin_content_not_available" = "This content is no longer available";
